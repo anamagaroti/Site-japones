@@ -20,19 +20,21 @@ public class RealizarLogin extends HttpServlet {
          try {
             String emailLogin = request.getParameter("emailLogin");
             String senhaLogin = request.getParameter("senhaLogin");
+            
             LoginDAO loginDAO = new LoginDAO();
             Login login = loginDAO.realizarLogin(emailLogin, senhaLogin);
+            
             if(login != null) {
                 HttpSession sessao = request.getSession(true);
                 sessao.setAttribute("login", login);
                 request.getRequestDispatcher("index.jsp").forward(request, response);
             } else {
                 request.setAttribute("mensagem", "Credenciais de acesso inválidas!");
-                request.getRequestDispatcher("index.jsp").forward(request, response);
+                request.getRequestDispatcher("login.jsp").forward(request, response);
             }
         } catch(SQLException | ClassNotFoundException ex) {
             request.setAttribute("mensagem", ex.getMessage());
-            request.getRequestDispatcher("index.jsp").forward(request, response);
+            request.getRequestDispatcher("login.jsp").forward(request, response);
         }
     }
 

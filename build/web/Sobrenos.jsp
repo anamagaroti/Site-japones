@@ -15,7 +15,7 @@
 <div class="one"></div>
 <header class="header">
     
-    <a href="index.html" class="grid-4">
+    <a href="index.jsp" class="grid-4">
 
         <img src="img/Logo_oishii.png" alt="" height="180px">
     </a>
@@ -23,7 +23,7 @@
 
         <ul>
             <li class="A"><a href="index.jsp" class="AA">início</a></li> 
-            <li class="A"><a href="cardapio.jsp" class="AA">Cardápio</a></li>
+            <li class="A"><a href="ListarProduto" class="AA">Cardápio</a></li>
             <li class="A"><a href="Sobrenos.jsp" class="AA">Sobre</a></li>
             <li class="A"><a href="paginaContato.jsp" class="AA">Contato</a></li>
         </ul>

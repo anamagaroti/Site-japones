@@ -14,25 +14,21 @@
         <img src="img/Logo_oishii.png.png" alt="logo do oishii" class="logodooishii">
         
         <form class="login" action="RealizarLogin" method="post">
+            <div class="alert alert-primary text-center" role="alert">
+                ${mensagem}
+            </div>
             <h2>Login</h2>
             <div class="box-user">
-                <input type="text" name="" required>
+                <input type="text" name="emailLogin" required>
                 <label>Usuário</label>
             </div>
             <div class="box-user">
-                <input type="password" name="" required>
+                <input type="password" name="senhaLogin" required>
                 <label>Senha</label>
             </div>
-
-
-            <div>
-                <a href="#" class="forget">Esqueceu a senha?</a>
-            </div>
-            
             <div>
                 <a href="cadastroUsuario.jsp" class="forget2">Cadastre-se</a>
             </div>
-
             <button type="submit" class="btn">Entrar</button>
         </form>
     </body>

@@ -1,22 +1,12 @@
 package model;
 
 public class Login {
-    private int idLogin;
     private String emailLogin;
     private String senhaLogin;
 
-    public Login(int idLogin, String emailLogin, String senhaLogin) {
-        this.idLogin = idLogin;
+    public Login(String emailLogin, String senhaLogin) {
         this.emailLogin = emailLogin;
         this.senhaLogin = senhaLogin;
-    }
-
-    public int getIdLogin() {
-        return idLogin;
-    }
-
-    public void setIdLogin(int idLogin) {
-        this.idLogin = idLogin;
     }
 
     public String getEmailLogin() {
@@ -33,7 +23,5 @@ public class Login {
 
     public void setSenhaLogin(String senhaLogin) {
         this.senhaLogin = senhaLogin;
-    }
-    
-    
+    } 
 }

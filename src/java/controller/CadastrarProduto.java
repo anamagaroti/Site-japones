@@ -3,8 +3,6 @@ package controller;
 import dao.ProdutoDAO;
 import java.io.IOException;
 import static java.lang.Double.parseDouble;
-import static java.lang.Integer.parseInt;
-import static java.lang.Long.parseLong;
 import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

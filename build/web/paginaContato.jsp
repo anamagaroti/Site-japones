@@ -8,7 +8,7 @@
         <link href="css/StyleContato.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <a href="index.html">
+        <a href="index.jsp">
     <img src="img/Logo_oishii.png.png" alt="Logo do oishi" class="logocontato">  
 </a>
 

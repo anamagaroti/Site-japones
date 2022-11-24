@@ -1,63 +1,61 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cadastro Usu√°rio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cadastro Usu·rio</title>
         <link rel="shortcut icon" href="img/Logo_oishii.png">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/StyleLogin.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/StyleCadastro.css">
     </head>
     <body>
-            <h1 style="text-align: center;">Cadastro do Usu√°rio</h1>
-            <br>
-            <form class="row g-3" action="CadastrarUsuario" method="post">
-                <input type="text" name="idUsuario" hidden>             
-                <div style="display: flex; justify-content: center;">
-                   
-                    <div>
-                        <div class="col">
-                            <label for="nome">Nome completo</label>
-                            <input id="nome" type="text" name="nomePessoa">
-                        </div>
-                        <div class="col">
-                            <label for="nascimento">Data de nascimento</label>
-                            <input id="nascimento" type="date" name="dataNascimentoPessoa">
-                        </div>
-                        <div class="col">
-                            <label for="endereco">Endere√ßo</label>
-                            <input id="endereco" type="text" name="enderecoPessoa">
-                        </div>
-                        <div class="col">
-                            <label for="cidade">Cidade</label>
-                            <input id="cidade" type="text" name="cidadePessoa">
-                        </div>
-                        <div class="col">
-                            <label for="estado">Estado</label>
-                            <input id="estado" type="text" name="estadoPessoa">        
-                        </div>
-                    </div>
-                    <div>
-                        <div class="col">
-                            <label for="cep">CEP</label>
-                            <input id="cep" type="text" name="cepPessoa">
-                        </div>
-                        <div class="col">
-                            <label for="celular">Celular</label>
-                            <input id="celular" type="text" name="celularPessoa">
-                        </div>
-                        <div class="col">
-                            <label for="email">Email</label>
-                            <input id="email" type="email" name="emailPessoa">
-                        </div>
-                        <div class="col">
-                            <label for="senha">Senha</label>
-                            <input id="senha" type="password" name="senhaPessoa">
-                        </div>
-                        <div class="col">
-                            <button type="submit">Cadastrar</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
+        <img src="img/Logo_oishii.png.png" alt="logo do oishii" class="logodooishii">
+        <form  style="margin-top: 15.5em;" class="login" action="CadastrarUsuario" method="post">
+            <h2>Cadastre-se</h2>
+            <input type="text" id="idusuario" name="idUsuario" readonly hidden/>
+            <div class="box-user">
+                <input type="text" name="nomePessoa" required>
+                <label>Nome completo</label>
+            </div>
+            <div class="box-user">
+                <input type="text" name="dataNascimentoPessoa" required>
+                <label>Data de nascimento</label>
+            </div>
+            <div class="box-user">
+                <input type="text" name="enderecoPessoa" required>
+                <label>EndereÁo</label>
+            </div>
+            <div class="box-user">
+                <input type="text" name="cidadePessoa" required>
+                <label>Cidade</label>
+            </div>
+            <div class="box-user">
+                <input type="text" name="estadoPessoa" required>
+                <label>Estado</label>
+            </div>
+            <div class="box-user">
+                <input type="text" name="cepPessoa" required>
+                <label>CEP</label>
+            </div>
+            <div class="box-user">
+                <input type="text" name="celularPessoa" required>
+                <label>Celular</label>
+            </div>
+            <div class="box-user">
+                <input type="email" name="emailPessoa" required>
+                <label>Email</label>
+            </div>
+            <div class="box-user">
+                <input type="password" name="senhaPessoa" required>
+                <label>Senha</label>
+            </div> 
+            <button style="border: none;" class="btn" type="submit">Criar conta </button>
+            <a href="login.jsp" class="btn">
+                Voltar
+            </a>               
+        </form>
     </body>
 </html>

@@ -77,5 +77,5 @@ create or replace procedure cadastrarPedido(id_venda int, id_produto int) as $$
 $$ language plpgsql;
 
 create or replace view login as
-select pe.idpessoa as idlogin, pe.emailpessoa as emaillogin, pe.senhapessoa as senhalogin
+select pe.emailpessoa as emaillogin, pe.senhapessoa as senhalogin
 from pessoa pe inner join usuario usu on usu.idusuario = pe.idpessoa;
